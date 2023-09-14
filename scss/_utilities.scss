@@ -1,0 +1,58 @@
+//background Color
+$Navcolor: #263238;
+$Navcolor1: rgba(38, 50, 56, 0.95);
+$Pcolor: #dfe1e2;
+$sencolor: #d5d7d9;
+$thirdcolor: #e99b28;
+$fourthcolor: #f4f5f5;
+
+//FontWight
+$fontW-xm: 300;
+$fontW-sm: 400;
+$fontW-md: 500;
+$fontW-lg: 600;
+$fontW-xl: 700;
+$fontW-2xl: 800;
+$fontW-3xl: 300;
+
+// breackpoint
+$breakpoint-xs: 475px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024x;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// button
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  background-color: var(--color-orange);
+  color: #f1f5f9;
+  padding: 1em 1em;
+  border-radius: 5px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(
+    to right,
+    rgb(1, 255, 183) 0%,
+    rgba(1, 255, 111, 0.5) 50%,
+    rgba(1, 255, 255, 0.5) 100%
+  );
+  transition: all 0.5s;
+}
+
+// !important
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.section {
+  margin-top: 5rem;
+}
