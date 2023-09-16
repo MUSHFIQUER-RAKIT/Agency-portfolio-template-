@@ -254,48 +254,25 @@
           height: 100%;
           overflow: hidden;
           object-fit: cover;
-          object-position: top 100%;
+          object-position: top;
         }
       }
-      .bottom_slider_wrap {
-        width: 100%;
-        display: flex;
-        margin-bottom: 10rem;
-        .bottom_slider-left {
-          width: 50%;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          gap: 2rem;
-          a {
+      .bottom_slider {
+        .slider {
+          .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            overflow: hidden;
+            height: 300px;
             img {
-              width: 200px;
-              height: 100px;
-            }
-            &:first-child {
-              animation: slide1 5s ease-in-out infinite;
-            }
-            &:nth-child(2) {
-              animation: slide2 3s ease-in-out infinite;
-            }
-          }
-        }
-        .bottom_slider-right {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2rem;
-          a {
-            img {
-              width: 200px;
-              height: 100px;
-            }
-            &:first-child {
-              animation: slide4 5s ease-in-out infinite;
-            }
-            &:nth-child(2) {
-              animation: slide3 3s ease-in-out infinite;
+              max-width: 150px;
+              height: 150px;
+              filter: grayscale(100%);
+              &:hover {
+                filter: grayscale(0%);
+                transition: all 0.5s;
+              }
             }
           }
         }

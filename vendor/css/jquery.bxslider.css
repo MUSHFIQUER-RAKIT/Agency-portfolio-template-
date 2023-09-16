@@ -6,10 +6,11 @@
   position: relative;
   margin-bottom: 60px;
   padding: 0;
+  *zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
-.bx-wrapper img {
+.bx-wrapper vendor image/ {
   max-width: 100%;
   display: block;
 }
@@ -42,7 +43,7 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url('img/bx_loader.gif') center center no-repeat #ffffff;
+  background: url('vendor/image/bx_loader.gif') center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -60,7 +61,7 @@ ul.bxslider {
   padding-top: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: white;
+  background: rgba(255, 193, 7, 0.3);
   text-indent: -9999px;
   display: block;
   width: 20px;
@@ -74,7 +75,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #19c880;
+  background: var(--color-yellow);
   width: 25px;
   height: 25px;
 }
@@ -92,7 +93,7 @@ ul.bxslider {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url('img/controls.png') no-repeat 0 -32px;
+  background: url('vendor/image/controls.png') no-repeat 0 -32px;
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
@@ -100,7 +101,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url('img/controls.png') no-repeat -43px -32px;
+  background: url('vendor/image/controls.png') no-repeat -43px -32px;
 }
 .bx-wrapper .bx-next:hover,
 .bx-wrapper .bx-next:focus {
@@ -129,7 +130,7 @@ ul.bxslider {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url('img/controls.png') -86px -11px no-repeat;
+  background: url('vendor/image/controls.png') -86px -11px no-repeat;
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-start:hover,
@@ -143,7 +144,7 @@ ul.bxslider {
   width: 9px;
   height: 11px;
   outline: 0;
-  background: url('img/controls.png') -86px -44px no-repeat;
+  background: url('vendor/image/controls.png') -86px -44px no-repeat;
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
@@ -170,7 +171,7 @@ ul.bxslider {
   width: 100%;
 }
 .bx-wrapper .bx-caption span {
-  color: #fff;
+  color: #ffffff;
   font-family: Arial;
   display: block;
   font-size: 0.85em;
