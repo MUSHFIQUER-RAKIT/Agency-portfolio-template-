@@ -6,7 +6,6 @@
         position: absolute;
         left: 0;
         top: 0;
-        position: absolute;
         width: 100%;
         height: 100% !important;
         object-fit: cover;
@@ -14,10 +13,11 @@
       }
       .boxs {
         background: rgba(38, 50, 56, 0.8);
+        transition: all 0.5s;
         &:hover {
-          box-shadow: 8px -12px 50px 4px #000000 inset;
           background: none;
-          transition: background 0.9s;
+          transition: all 0.5s;
+          transform: translatey(0rem);
         }
         display: flex;
         width: 100%;
@@ -28,6 +28,10 @@
         justify-content: space-between;
         border-bottom: solid 1px rgba(255, 255, 255, 0.2);
         overflow: hidden;
+        &:hover .section2_item2 {
+          transition: all 0.5s;
+          transform: translatey(0rem);
+        }
         .section2_item1 {
           display: flex;
           align-items: center;
@@ -42,7 +46,9 @@
           }
         }
         .section2_item2 {
+          transform: translatey(6rem);
           h2 {
+            margin-bottom: 2rem;
             text-transform: capitalize;
             color: var(--color-white);
             font-size: var(--size-sm);
@@ -50,7 +56,7 @@
           }
           span {
             text-transform: capitalize;
-            color: var(--color-gray-500);
+            color: var(--color-white);
             font-size: var(--size-sm);
             font-weight: 500;
           }

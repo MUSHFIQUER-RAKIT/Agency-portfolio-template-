@@ -1,6 +1,12 @@
+$liner: linear-gradient(
+  to right,
+  rgb(255, 175, 1) 0%,
+  rgba(255, 166, 1, 0.5) 50%,
+  rgb(255, 166, 1) 100%
+);
 //background Color
 $Navcolor: #263238;
-$Navcolor1: rgba(38, 50, 56, 0.95);
+$Navcolor1: rgba(38, 50, 56, 0.93);
 $Pcolor: #dfe1e2;
 $sencolor: #d5d7d9;
 $thirdcolor: #e99b28;
@@ -35,14 +41,31 @@ $breakpoint-2xl: 1536px;
   border-radius: 5px;
 }
 .btn:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(
-    to right,
-    rgb(1, 255, 183) 0%,
-    rgba(1, 255, 111, 0.5) 50%,
-    rgba(1, 255, 255, 0.5) 100%
-  );
+  transform: scale(1.1);
+  background: $liner;
   transition: all 0.5s;
+}
+.custom-btn {
+  position: relative;
+  &::after {
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid var(--color-yellow);
+    background-color: var(--color-orange);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+.yellow-span {
+  color: var(--color-yellow);
 }
 // !important
 .container {

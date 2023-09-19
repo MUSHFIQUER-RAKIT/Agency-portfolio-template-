@@ -1,5 +1,5 @@
 #header {
-  background-color: rgba(38, 50, 56, 0.95);
+  background-color: $Navcolor1;
   .header_inner {
     .img_header {
       display: block;
@@ -196,9 +196,6 @@
             line-height: 4rem;
             font-size: var(--size-5xl);
             font-weight: 600;
-            span {
-              color: var(--color-yellow);
-            }
           }
         }
         .hero_area-right {
@@ -237,7 +234,7 @@
       }
     }
     .bottom_header {
-      background-color: var(--color-gray-300);
+      background-color: var(--color-white);
       display: flex;
       flex-direction: column;
       align-items: center;

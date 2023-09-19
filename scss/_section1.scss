@@ -34,25 +34,6 @@
           font-weight: 500;
           letter-spacing: 2px;
         }
-        .custom-btn {
-          position: relative;
-          &::after {
-            content: '';
-            width: 100%;
-            border-bottom: 2px solid var(--color-yellow);
-            background-color: var(--color-orange);
-            position: absolute;
-            top: 100%;
-            left: 0px;
-            transform: scaleX(0);
-            transform-origin: bottom left;
-            transition: transform 0.25s ease-out;
-          }
-          &:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-        }
       }
     }
     .section1_right {
